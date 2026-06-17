@@ -1,0 +1,18 @@
+/* Custom SCSS scrollbar with nested rules */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+
+  &-track {
+    background: #0e0e0e;
+  }
+
+  &-thumb {
+    background: #353534;
+    border-radius: 4px;
+
+    &:hover {
+      background: #414755;
+    }
+  }
+}
