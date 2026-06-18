@@ -203,14 +203,14 @@ export default function App() {
             🇻🇳 VI
           </button>
         </div>
-
+{/* 
         <button
           id="cv-download-float-btn-mobile"
           onClick={() => setResumeOpen(true)}
           className="flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-[11px] font-bold px-3.5 py-2 rounded-lg shadow-sm hover:shadow transition-all cursor-pointer font-sans min-w-[132px]"
         >
           <Download size={13} fill="none" /> {t("portfolio.page.download.my.cv")}
-        </button>
+        </button> */}
       </div>
 
       {/* ----------------- MAIN SCROLL CONTENT AREA ----------------- */}
