@@ -49,14 +49,14 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
       description: t("portfolio.page.experience.intern.description"),
       skills: ["React", "SCSS", "Redux", "JavaScript", "Git"]
     },
-    {
-      id: "grocery-staff",
-      year: t("portfolio.page.experience.grocery.duration"),
-      role: t("portfolio.page.experience.grocery.title"),
-      company: t("portfolio.page.experience.grocery.company"),
-      description: t("portfolio.page.experience.grocery.description"),
-      skills: ["Communication", "Soft Skills"]
-    }
+    // {
+    //   id: "grocery-staff",
+    //   year: t("portfolio.page.experience.grocery.duration"),
+    //   role: t("portfolio.page.experience.grocery.title"),
+    //   company: t("portfolio.page.experience.grocery.company"),
+    //   description: t("portfolio.page.experience.grocery.description"),
+    //   skills: ["Communication", "Soft Skills"]
+    // }
   ];
 
   const handleCopyText = () => {

@@ -62,14 +62,14 @@ export const TIMELINE: TimelineItem[] = [
     descKey: "portfolio.page.experience.intern.description",
     skills: ["React", "SCSS", "Redux", "JavaScript", "Git"]
   },
-  {
-    id: "grocery-staff",
-    yearKey: "portfolio.page.experience.grocery.duration",
-    roleKey: "portfolio.page.experience.grocery.title",
-    companyKey: "portfolio.page.experience.grocery.company",
-    descKey: "portfolio.page.experience.grocery.description",
-    skills: ["Communication", "Soft Skills"]
-  }
+  // {
+  //   id: "grocery-staff",
+  //   yearKey: "portfolio.page.experience.grocery.duration",
+  //   roleKey: "portfolio.page.experience.grocery.title",
+  //   companyKey: "portfolio.page.experience.grocery.company",
+  //   descKey: "portfolio.page.experience.grocery.description",
+  //   skills: ["Communication", "Soft Skills"]
+  // }
 ];
 
 export const SKILLS: SkillItem[] = [
