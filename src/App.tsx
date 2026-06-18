@@ -22,6 +22,7 @@ import ContactsSection from "./components/ContactsSection";
 
 import { useLanguage } from "./LanguageContext";
 import { Project } from "./types";
+import { image } from "./image";
 
 export default function App() {
   const { t, language, setLanguage } = useLanguage();

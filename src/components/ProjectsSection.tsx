@@ -1,14 +1,8 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import React from "react";
 import { motion } from "motion/react";
-import ProjectCard from "./ProjectCard";
 import { PROJECTS } from "../data";
 import { useLanguage } from "../LanguageContext";
 import { Project } from "../types";
+import ProjectCard from "./ProjectCard";
 
 interface ProjectsSectionProps {
   onOpenProjectModal: (project: Project, mode: "demo" | "source") => void;

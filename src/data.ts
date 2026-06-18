@@ -4,6 +4,11 @@
  */
 
 import { Project, TimelineItem, SkillItem, ServiceItem, EducationItem, ContactMethod, NavItem } from "./types";
+import { image } from "./image";
+
+const tygraphProductImage = image("product");
+const tygraphGalleryImages = [image("ui4"), image("ui5"), image("ui6")];
+const shareblogImage = image("shareblog");
 
 export const PROJECTS: Project[] = [
   {
@@ -11,10 +16,8 @@ export const PROJECTS: Project[] = [
     title: "TyGraph Product",
     description: "A business metrics analytics dashboard environment displaying tenant license usage, OneDrive logs, and SharePoint adoption details.",
     longDescription: "TyGraph Product is an enterprise-scale governance and adoption platform designed to help organizations monitor, analyze, and optimize their collaboration workspaces. Built with heavy emphasis on state-management speed and smooth transitions, it tracks tenant seats across Sales, IT, and Customer success departments, reporting detailed real-time trends on licensed users, unique readers, active OneDrive users, and SharePoint metrics.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-    ],
+    image: tygraphProductImage,
+    gallery: tygraphGalleryImages,
     tags: ["React", "TypeScript", "Redux", "SCSS", "D3.js", "REST API"],
     demoUrl: "#demo-tygraph",
     sourceUrl: "#src-tygraph",
@@ -29,10 +32,8 @@ export const PROJECTS: Project[] = [
     title: "Share Blog Website",
     description: "Multi-column responsive blogging and article publication system with real-time categorizations and reader discussions.",
     longDescription: "Share Blog Website is a full-featured content hub optimized for technical documentation and tech articles. Built utilizing ASP.NET Core alongside SQL Server and Entity Framework, it provides active article sorting, real-time query searching, popular article rankings, follow widgets, and interactive social discussion boards.",
-    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-    ],
+    image: shareblogImage,
+    gallery: [shareblogImage],
     tags: ["ASP.NET Core", "Entity Framework", "SQL Server", "SCSS", "JavaScript"],
     demoUrl: "#demo-shareblog",
     sourceUrl: "#src-shareblog",

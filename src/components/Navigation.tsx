@@ -3,11 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from "react";
 import { Download, Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
+import { useState } from "react";
 import { NAV_ITEMS } from "../data";
 import { useLanguage } from "../LanguageContext";
+import { image } from "../image";
 
 const AvatarImage = ({ alt, className }: { alt: string; className?: string }) => {
   const [imgSrc, setImgSrc] = useState<string>(image("avatar3"));
@@ -16,13 +17,13 @@ const AvatarImage = ({ alt, className }: { alt: string; className?: string }) =>
 
   const handleError = () => {
     if (attempt === 0) {
-      setImgSrc("/avatar3.jpg");
+      setImgSrc(image("avatar3.jpg"));
       setAttempt(1);
     } else if (attempt === 1) {
-      setImgSrc("/avatar3.webp");
+      setImgSrc(image("avatar3.webp"));
       setAttempt(2);
     } else if (attempt === 2) {
-      setImgSrc("/avatar3.svg");
+      setImgSrc(image("avatar3.svg"));
       setAttempt(3);
     } else {
       setImgSrc(fallbackUrl);

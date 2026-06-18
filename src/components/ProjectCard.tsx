@@ -3,11 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from "react";
-import { ExternalLink, Code, Play, Eye } from "lucide-react";
+import { Code, Eye, Play } from "lucide-react";
 import { motion } from "motion/react";
-import { Project } from "../types";
 import { useLanguage } from "../LanguageContext";
+import { Project } from "../types";
 
 interface ProjectCardProps {
   key?: string | number;
