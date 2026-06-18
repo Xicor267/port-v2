@@ -143,15 +143,14 @@ export default function App() {
       />
 
       {/* ----------------- UPPER-RIGHT FLOAT BAR (CV DOWNLOAD & LANGUAGE SELECTOR) -------------- */}
-      <div id="float-control-bar" className="absolute md:fixed top-4 md:top-6 right-6 md:right-10 z-20 flex items-center gap-3">
-        {/* Real Dynamic Language switcher */}
+      <div id="float-control-bar-desktop" className="hidden md:flex fixed top-6 right-10 z-20 items-center gap-3">
         <div id="language-switcher-wrapper" className="flex bg-white border border-gray-200 p-1 rounded-lg shadow-sm">
           <button
             id="lang-selector-en"
             onClick={() => setLanguage("en")}
             className={`px-3 py-1.5 text-xs font-bold font-sans rounded-md transition-all cursor-pointer ${
-              language === "en" 
-                ? "bg-blue-600 text-white shadow-xs" 
+              language === "en"
+                ? "bg-blue-600 text-white shadow-xs"
                 : "text-gray-600 hover:bg-gray-100"
             }`}
           >
@@ -161,8 +160,8 @@ export default function App() {
             id="lang-selector-vi"
             onClick={() => setLanguage("vi")}
             className={`px-3 py-1.5 text-xs font-bold font-sans rounded-md transition-all cursor-pointer ${
-              language === "vi" 
-                ? "bg-blue-600 text-white shadow-xs" 
+              language === "vi"
+                ? "bg-blue-600 text-white shadow-xs"
                 : "text-gray-600 hover:bg-gray-100"
             }`}
           >
@@ -170,13 +169,47 @@ export default function App() {
           </button>
         </div>
 
-        {/* Dynamic Download action button */}
         <button
-          id="cv-download-float-btn"
+          id="cv-download-float-btn-desktop"
           onClick={() => setResumeOpen(true)}
           className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold px-4 py-2.5 rounded-lg shadow-sm hover:shadow hover:scale-[1.01] transition-all cursor-pointer font-sans h-[34px]"
         >
           <Download size={14} fill="none" /> {t("portfolio.page.download.my.cv")}
+        </button>
+      </div>
+
+      <div id="float-control-bar-mobile" className="fixed top-20 right-4 z-30 flex md:hidden flex-col items-end gap-2">
+        <div id="language-switcher-wrapper-mobile" className="flex bg-white border border-gray-200 p-1 rounded-lg shadow-sm">
+          <button
+            id="mobile-lang-selector-en"
+            onClick={() => setLanguage("en")}
+            className={`px-2.5 py-1 text-[11px] font-bold font-sans rounded-md transition-all cursor-pointer ${
+              language === "en"
+                ? "bg-blue-600 text-white shadow-xs"
+                : "text-gray-600 hover:bg-gray-100"
+            }`}
+          >
+            🇬🇧 EN
+          </button>
+          <button
+            id="mobile-lang-selector-vi"
+            onClick={() => setLanguage("vi")}
+            className={`px-2.5 py-1 text-[11px] font-bold font-sans rounded-md transition-all cursor-pointer ${
+              language === "vi"
+                ? "bg-blue-600 text-white shadow-xs"
+                : "text-gray-600 hover:bg-gray-100"
+            }`}
+          >
+            🇻🇳 VI
+          </button>
+        </div>
+
+        <button
+          id="cv-download-float-btn-mobile"
+          onClick={() => setResumeOpen(true)}
+          className="flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-[11px] font-bold px-3.5 py-2 rounded-lg shadow-sm hover:shadow transition-all cursor-pointer font-sans min-w-[132px]"
+        >
+          <Download size={13} fill="none" /> {t("portfolio.page.download.my.cv")}
         </button>
       </div>
 
