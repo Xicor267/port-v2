@@ -19,7 +19,7 @@ export default function HomeSection({ homeBg }: HomeSectionProps) {
       id="home" 
       className="relative min-h-screen flex items-center justify-start p-6 sm:p-16 md:p-24 overflow-hidden bg-[#2d5c7f]/10"
       style={{
-        backgroundImage: `linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.55)), ${homeBg}`,
+        backgroundImage: `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.25)), ${homeBg}`,
         backgroundSize: "cover",
         backgroundPosition: "center"
       }}
